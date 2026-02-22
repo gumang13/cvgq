@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상식퀴즈</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+<main class="main">
+    <div class="quiz-container">
+        <div class="top-bar">
+            <div class="quiz-title">상식 퀴즈</div>
+            <div class="timer" id="timer">03:00</div>
+        </div>
+    
+        <div class="content">
+            <div class="question" id="question"></div>
+            <div id="options"></div>
+        </div>
+    
+        <div class="button-area">
+            <button onclick="nextQuestion()">다음</button>
+            <button onclick="submitExam()">제출</button>
+        </div>
+    </div>
+</main>
+<script src="Quiz.js"></script>
+</body>
+</html>
