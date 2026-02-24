@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+th, td{
+    border-bottom: 1px solid black;
+}
+th{
+    font-size: 25px;
+    text-align: center;
+}
+td{
+    font-size: 20px;
+    height: 40px;
+}
+#questionBody tr td:nth-child(2){
+    width: 600px;
+    padding-left: 20px;
+
+}
+.wrap{
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
+.tableWrap button{
+    width: 50px;
+    height: 40px;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.tableWrap{
+    padding: 25px;
+    width: 800px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 100px;
+    overflow-y: auto;
+    border: solid 3px rgb(177, 176, 176);
+    border-radius: 7px;
+}
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+.buttonWrap{
+    width: 150px;
+    height: 50px;
+    margin: 20px auto;
+    border-radius: 7px;
+    text-align: center;
+    background-color: rgb(168, 167, 167);
+}
+.startButton:hover{
+    background-color: rgb(129, 129, 129);
+    color: white;
+}
+.startButton{
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    justify-content: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+}
