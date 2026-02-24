@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>채점 결과 + 오답노트</title>
+  <link rel="stylesheet" href="./result.css" />
+</head>
+<body>
+  <!-- <header class="header">
+  <div class="header-inner">
+
+    <div class="left">
+      <div class="title">온라인 시험/문제은행 </div>
+      
+    </div>
+
+    <div class="right">
+      <button><a href="">문제 등록</a></button>
+      <button><a href="">문제 목록</a></button>
+      <button><a href="./TestStart.html">시험 시작</a></button>
+      <button><a href="./result.html">결과/오답노트</a></button>
+      
+    </div>
+
+  </div> -->
+</header>
+
+  <main class="wrap">
+    <!-- 결과 -->
+    <section class="card">
+      <h2>채점 결과</h2>
+      <div class="scoreBox">
+        <div class="score" id="scoreText">-</div>
+        
+      </div>
+      <div class="detail" id="detailText"></div>
+      
+    </section>
+
+    <!-- 오답노트 -->
+    <section class="card" id="wrongSection">
+      <h2>오답노트</h2>
+      <p class="muted">틀린 문제 </p>
+      <div id="wrongWrap"></div>
+    </section>
+  </main>
+  <script src="./dummyData.js"></script>
+  <script src="./result.js"></script>
+</body>
+</html>
