@@ -101,7 +101,8 @@ function submitTest(){
             wrongAnswers.push({ // 틀리면 wrongAnswers에 저장
                 question: questions[i].question,
                 correct: questions[i].answer,
-                user: userAnswers[i]
+                user: userAnswers[i],
+                options: questions[i].options
             });
         }
     }
