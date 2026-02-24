@@ -5,20 +5,44 @@
 }
 /*헤더영역 시작*/
 .header{
+    
     display: grid;
     align-items: center;
     justify-items: center;
     height: 80px;
-    background: #4374D9;
+    background:#f4f6f9;
     color: white;
     font-size: 24px;
     grid-template-columns: 1fr 1fr;
-  
+    
 }
+.imgBox{
+    display: grid;
+    padding-left: 150px;
+    
+}
+.imgBox img{
+   
+  
+   background-size: contain;
+   background-repeat: no-repeat;
+   height: 50px;
+   width: 150px;
+   box-sizing: border-box;
+   object-fit: cover;
+}
+
 .menu{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap:30px;
+    padding-right: 250px;
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
 }
 .header ul{
     display: flex;
@@ -34,6 +58,7 @@
 }
 /*바디영역 시작*/
 .main{
+    
     background: #f4f6f9;
     
     display: grid;
@@ -44,7 +69,7 @@
 .mainWrap{
     
     padding: 20px;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 800px;
     height: 820px;
      background: white;
