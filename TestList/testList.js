@@ -22,9 +22,6 @@ fetch("questions.json")
 
         localStorage.setItem("random",JSON.stringify(randomQ));
         
-        const question = JSON.parse(localStorage.getItem("random"));
-
-console.log(question.testName);
 
       });
     }
