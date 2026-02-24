@@ -2,6 +2,32 @@
 let questions = [];
 let currentIndex = 0;
 let userAnswers = []; // 고른 답 저장
+let timeLeft = 180;
+let timerInterval;
+
+// 타이머
+window.onload = function(){
+    startTimer(); // 타이머 시작
+}
+function startTimer(){
+    timerInterval = setInterval(function(){
+        timeLeft--;
+
+        let minute = Math.floor(timeLeft / 60);
+        let seconds = timeLeft % 60;
+
+        if(seconds < 10){
+            seconds = "0" + seconds;
+        }
+        document.getElementById("timer").innerText = minute + ":" + seconds;
+
+        // 시간 끝났을때
+        if(timeLeft <= 0){
+            clearInterval(timerInterval);
+            submitTest(); // 자동제출
+        }
+    }, 1000);
+}
 
 // JSON 불러오기
 fetch("questions.json") // 서버에서 파일 가져오기
@@ -53,6 +79,8 @@ function prevQuestion(){
 }
 // 시험 종료 처리(localStorage : 데이터 저장)
 function submitTest(){
+    clearInterval(timerInterval);
+
     for(let i = 0; i < questions.length; i++){
         if(userAnswers[i] === undefined){ 
             let confirmSubmit = confirm("풀지 않은 문제가 있습니다. 제출하시겠습니까?");
