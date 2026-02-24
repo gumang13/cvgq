@@ -99,12 +99,16 @@ a:hover{
    cursor: pointer;
 } */
 /*====================================================*/
+.body{
+    background: #f4f6f9;
+}
 .wrap{
   max-width: 800px;
   margin: 18px auto;
   padding: 0 14px 40px;
   display: grid;
   gap: 14px;
+  background: f4f6f9;
 }
 .card{
   background:#fff;
