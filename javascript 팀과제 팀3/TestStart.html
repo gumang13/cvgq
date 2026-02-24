@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>상식퀴즈</title>
-    <link rel="stylesheet" href="Quiz.css">
+    <title>TestStart</title>
+    <link rel="stylesheet" href="TestStart.css">
 </head>
 <body>
 <main class="main">
-    <div class="quiz-container">
+    <div class="test-container">
         <div class="top-bar">
-            <div class="quiz-title">상식 퀴즈</div>
+            <div class="test-title">Test</div>
             <div class="timer" id="timer">03:00</div>
         </div>
     
@@ -20,11 +20,12 @@
         </div>
     
         <div class="button-area">
+            <button onclick="prevQuestion()">이전</button>
             <button onclick="nextQuestion()">다음</button>
-            <button onclick="submitQuiz()">제출</button>
+            <button onclick="submitTest()">제출</button>
         </div>
     </div>
 </main>
-<script src="Quiz.js"></script>
+<script src="TestStart.js"></script>
 </body>
 </html>

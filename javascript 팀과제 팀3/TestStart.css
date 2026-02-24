@@ -5,7 +5,7 @@
     align-items: center;
     height: 100vh;
 }
-.quiz-container {
+.test-container {
     width: 800px;
     min-height: 500px;
     background: white;
@@ -23,7 +23,7 @@
     padding-bottom: 20px;
     border-bottom: 1px solid #ddd;  /* 구분선 추가 */
 }
-.quiz-title{
+.test-title{
     font-weight: bold;
     font-size: 24px;
 }
