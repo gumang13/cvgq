@@ -18,11 +18,16 @@ fetch("questions.json")
 
         body.appendChild(rows);
 
-        const randomQ = qData[Math.floor(Math.random()*qData.length)];
 
-        localStorage.setItem("random",JSON.stringify(randomQ));
-        
 
       });
+
+    const randomQ = [...data].sort(() => Math.random() - 0.5);
+
+    const randomFive = randomQ.slice(0, 5);
+
+    localStorage.setItem("random", JSON.stringify(randomFive));
+
     }
+    
   });
