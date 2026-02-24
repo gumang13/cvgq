@@ -15,7 +15,7 @@ td{
     height: 40px;
 }
 #questionBody tr td:nth-child(2){
-    width: 600px;
+    width: 700px;
     padding-left: 20px;
 
 }
@@ -23,7 +23,7 @@ td{
     width: 1200px;
     height: 900px;
     margin: 0 auto;
-    border: 1px solid blue;
+    box-shadow: 2px 3px 4px black;
 }
 .tableWrap button{
     width: 50px;
