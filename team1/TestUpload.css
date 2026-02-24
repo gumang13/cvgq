@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*헤더영역 시작*/
+.header{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 80px;
+    background: #4374D9;
+    color: white;
+    font-size: 24px;
+    grid-template-columns: 1fr 1fr;
+  
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+.header ul li{
+    cursor: pointer;
+    transition: color 0.2s ease;
+    font-size: 14px;
+}
+/*바디영역 시작*/
+.main{
+    background: #f4f6f9;
+    
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    
+}
+.mainWrap{
+    
+    padding: 20px;
+    margin-top: 100px;
+    width: 800px;
+    height: 820px;
+     background: white;
+    border-radius: 9px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.2s ease;
+}
+
+.titleBox{
+    display: grid;
+    height: 70px;
+     align-content: center;
+     justify-content: center;
+} 
+.testNameBox{
+    height: 100px;
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+   
+}
+.testNameBox label{
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+     
+}
+.testNameBox textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+  overflow: auto;
+  border-radius: 9px;
+   border: 1px solid #ccc;
+}
+.optionWrap{
+   margin-top: 20px;
+    height: 340px;
+   display: grid;
+
+}
+.optionBox{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-size: 16px;
+}
+.option input{
+     border: 1px solid #ccc;
+}
+.option{
+    
+     border-radius: 9px;
+}
+.optionBox label{
+    justify-content: center;
+    align-content: center;
+    
+}
+#testName{
+    width: 100%;
+    height: 100%;
+}
+.answerBox{
+    margin-top: 10px;
+    align-content: center;
+
+    height: 50px;
+}
+.answerBox input{
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 9px;
+     border: 1px solid #ccc;
+}
+.explanationBox{
+  height: 100px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  font-size: 18px;
+}
+.explanationBox label{
+    align-content: center;
+    justify-content: center;
+}
+.explanationBox textarea{
+    border-radius: 9px;
+     border: 1px solid #ccc;
+}
+.buttonWrap{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+}
+.buttonWrap button{
+    border-radius: 9px;
+    width: 100px;
+    height: 50px;
+    background-color: #4374D9;
+    color: white;
+    
+    
+}
+/*-------------------------------------------------------*/
+/* 마우스를 올렸을 때 (Hover) */
+.buttonWrap button:hover {
+    background: #4374D9;
+    box-shadow: 0 0 15px rgba(255, 190, 83, 0.6), 0 4px 0 #c48b32;
+    transform: translateY(-2px);
+}
+
+/* 클릭하는 순간 (Active) */
+.buttonWrap button:active {
+    box-shadow: 0 0px 0 #c48b32;
+    transform: translateY(4px); /* 실제로 버튼이 쑥 눌리는 느낌 */
+}
