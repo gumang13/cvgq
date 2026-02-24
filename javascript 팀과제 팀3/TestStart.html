@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestStart</title>
+    <link rel="stylesheet" href="TestStart.css">
+</head>
+<body>
+<main class="main">
+    <div class="test-container">
+        <div class="top-bar">
+            <div class="test-title">Test</div>
+            <div class="timer" id="timer">3:00</div>
+        </div>
+
+        <div class="content">
+            <div class="question" id="question"></div>
+            <div id="options"></div>
+        </div>
+
+        <div class="button-area">
+            <button onclick="prevQuestion()">이전</button>
+            <button onclick="nextQuestion()">다음</button>
+            <button onclick="submitTest()">제출</button>
+        </div>
+    </div>
+</main>
+<script src="TestStart.js"></script>
+</body>
+</html>
