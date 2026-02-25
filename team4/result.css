@@ -1,0 +1,181 @@
+* {
+  margin: 0;              
+  padding: 0;             
+  box-sizing: border-box; 
+}.header{
+    
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 80px;
+    background:#f4f6f9;
+    color: white;
+    font-size: 24px;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.imgBox{
+    display: grid;
+    padding-left: 150px;
+    
+}
+.imgBox img{
+   
+  
+   background-size: contain;
+   background-repeat: no-repeat;
+   height: 50px;
+   width: 150px;
+   box-sizing: border-box;
+   object-fit: cover;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    padding-right: 250px;
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+.header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+.header ul li{
+    cursor: pointer;
+    transition: color 0.2s ease;
+    font-size: 14px;
+}
+
+/* .header{
+  background: #0f172a;
+  padding: 15px 20px;
+}
+
+.header-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title{
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.right button{
+  background: #1e293b;
+  color: white;
+  border: 1px solid #334155;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+button a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  
+}
+a:hover{
+  color: black;
+}
+.right button:hover{
+  background:#a5bcd6
+   
+}
+
+.right button{
+   cursor: pointer;
+} */
+/*====================================================*/
+.body{
+    background: #f4f6f9;
+}
+
+
+.wrap{
+
+  max-width: 800px;
+  margin: 18px auto;
+  padding: 0 14px 40px;
+  display: grid;
+  gap: 14px;
+  background: f4f6f9;
+  margin-top: 50px;
+}
+.card{
+  background:#fff;
+  border-radius:16px;
+  padding: 35px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+  
+  
+}
+h2{ margin:0 0 10px; }
+.muted{ color:#6b7280; font-size:13px; }
+
+.scoreBox{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:6px;
+}
+.score{
+  font-size:28px;
+  font-weight:900;
+}
+.meta{
+  font-size:13px;
+  color:#6b7280;
+}
+.detail{
+  margin-top:10px;
+  color:#374151;
+  font-size:14px;
+  line-height:1.5;
+}
+
+
+.note{
+  border:1px solid #b2b3b6;
+  border-radius:14px;
+  padding:12px;
+  margin-top:10px;
+}
+
+.note h3{
+  margin:10px 0 8px;
+  font-size:16px;
+}
+.list{
+  border: 1px solid rgb(141, 139, 139);
+  border-radius:8px;
+  margin: 5px;
+  width: 100%;
+}
+.my-answer{
+  background:#ffd6d6;   /* 빨강 */
+  color:#b00000;
+}
+
+.correct-answer{
+  background:#d6ffd6;   /* 초록 */
+  color:#006400;
+  font-weight:bold;
+}
+.answer-text{
+  color:#006400;
+}

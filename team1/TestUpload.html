@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./TestUpload.css">
+    
+    <script href="TestUPload.js"></script>
+</head>
+<body>
+    <header class="header">
+        
+         <div class="imgBox">
+               <img src="../logo.png" alt="">
+            
+         </div>
+        
+         <div class="menu">
+
+            <ul>
+                <li><a href="../team1/TestUpload.html">문제등록</a></li>
+            </ul>
+            <ul>
+                <li><a href="../team2/testList.html">문제목록</a></li>
+            </ul>
+            <ul>
+                <li><a href="../team3/TestStart.html">시험시작</a></li>
+            </ul>
+            <ul>
+                <li><a href="../team4/result.html">결과</a></li>
+            </ul>
+         </div>
+         
+    </header>
+    <main class="main">
+      
+        <div class="mainWrap">
+            <div class="titleBox">
+                  <h1>문제 입력</h1>
+           
+            </div>
+            <div class="testNameBox">
+                <label for="testName">문제를 입력하세요 :</label>
+               <textarea name="testName" id="testName"></textarea>
+            </div>
+            <div class="optionWrap">
+                <div class="optionBox">
+                <label for="option1">보기1</label>
+                <input type="text" class="option" id="option1">
+                </div>
+             
+                 <div class="optionBox">
+                <label for="option2">보기2</label>
+                <input type="text" class="option" id="option2">
+                </div>
+                
+                <div class="optionBox">
+                <label for="option3">보기3</label>
+                <input type="text" class="option" id="option3">
+                </div>
+                
+                <div class="optionBox">
+                <label for="option4">보기4</label>
+                <input type="text" class="option" id="option4">
+                </div>
+            </div>
+            <div class="answerBox">
+                <label for="answer">정답</label>
+                <input type="number" id="answer" value="1" min="1" max="4">
+            </div>
+            <div class="explanationBox">
+                <label for="explanation">해설</label>
+                <textarea name="explanation" id="explanation"></textarea>
+            </div>
+            <div class="buttonWrap">
+            <button id="button">등록</button>
+            </div>
+         
+        </div>
+            
+    </main>
+</body>
+</html>
+
+
+<script>
+    const bt = document.getElementById('button');
+    const getVal = id => document.getElementById(id).value;
+    let testName=document.getElementById('testName');
+    let option1=document.getElementById('option1');
+    let option2=document.getElementById('option2');
+    let option3=document.getElementById('option3');
+    let option4=document.getElementById('option4');
+    let answer=document.getElementById('answer');
+    let explanation=document.getElementById('explanation');
+    
+    function getNextId() {
+        try {
+            const existing = localStorage.getItem('questions');
+            const items = existing ? JSON.parse(existing) : [];
+            if (!Array.isArray(items) || items.length === 0) return 1;
+            const max = items.reduce((m, it) => {
+                const v = Number(it.id);
+                return isNaN(v) ? m : Math.max(m, v);
+            }, 0);
+            return max + 1;
+        } catch (e) {
+            return 1;
+        }
+    }
+    
+   
+    bt.addEventListener('click', () => {
+        let rd = 0;
+        if(testName.value!='') rd++
+        if(option1.value!='')rd++
+        if(option2.value!='')rd++
+        if(option3.value!='')rd++
+        if(option4.value!='')rd++
+        if(answer.value!='')rd++
+        if(explanation.value!='')rd++
+        if(rd<=6) alert('입력하지 않은 정보가 있습니다 모두 입력해 주세요')
+        else{
+        const data = {
+           testName : testName.value,
+           options1 : option1.value,
+           options2 : option2.value,
+           options3 : option3.value,
+           options4 : option4.value,
+           answer : answer.value,
+           explanation : explanation.value
+        };
+
+        data.id = getNextId();
+
+        try {
+            const existing = localStorage.getItem('questions');
+            const items = existing ? JSON.parse(existing) : [];
+            items.push(data);
+            localStorage.setItem('questions', JSON.stringify(items));
+            
+            alert('저장 성공 (id: ' + data.id + ')');
+            console.log('저장된 데이터:', data);
+            
+            // 폼 초기화
+            testName.value = '';
+            option1.value = '';
+            option2.value = '';
+            option3.value = '';
+            option4.value = '';
+            answer.value = '1';
+            explanation.value = '';
+        } catch (err) {
+            alert('저장 실패: ' + err.message);
+            console.error(err);
+        }
+    }});
+    
+
+//======================================================
+
+</script>

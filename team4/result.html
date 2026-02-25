@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>채점 결과 + 오답노트</title>
+  <link rel="stylesheet" href="./result.css" />
+</head>
+<body class="body">
+ <header class="header">
+        
+         <div class="imgBox">
+               <img src="../logo.png" alt="">
+            
+         </div>
+        
+         <div class="menu">
+
+            <ul>
+                <li><a href="../team1/TestUpload.html">문제등록</a></li>
+            </ul>
+            <ul>
+                <li><a href="../team2/testList.html">문제목록</a></li>
+            </ul>
+            <ul>
+                <li><a href="../team3/TestStart.html">시험시작</a></li>
+            </ul>
+            <ul>
+                <li><a href="../team4/result.html">결과</a></li>
+            </ul>
+         </div>
+         
+    </header>
+
+  <main class="wrap">
+    <!-- 결과 -->
+    <section class="card">
+      <h2>채점 결과</h2>
+      <div class="scoreBox">
+        <div class="score" id="scoreText">-</div>
+        
+      </div>
+      <div class="detail" id="detailText"></div>
+      
+    </section>
+
+    <!-- 오답노트 -->
+    <section class="card" id="wrongSection">
+      <h2>오답노트</h2>
+      <p class="muted">틀린 문제 </p>
+      <div id="wrongWrap"></div>
+    </section>
+  </main>
+  
+  <script src="./result.js"></script>
+</body>
+</html>
