@@ -2,13 +2,7 @@
     padding: 0;
     margin: 0;
 }
-.main{
-    background: #f4f6f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+/*헤더영역 */
 .header{
     
     display: grid;
@@ -27,14 +21,14 @@
     
 }
 .imgBox img{
-   
-  
-   background-size: contain;
-   background-repeat: no-repeat;
-   height: 50px;
-   width: 150px;
-   box-sizing: border-box;
-   object-fit: cover;
+    
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 150px;
+    box-sizing: border-box;
+    object-fit: cover;
 }
 
 .menu{
@@ -60,6 +54,19 @@
     cursor: pointer;
     transition: color 0.2s ease;
     font-size: 14px;
+}
+/*  메인영역  */
+.body{
+    background: #f4f6f9;
+    
+}
+.main{
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 50px;
 }
 .test-container {
     width: 800px;

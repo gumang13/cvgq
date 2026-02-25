@@ -40,7 +40,7 @@ if (!total){
   wrongAnswers.forEach(function(q, index) {
     html += `
       <div class="note">
-        <h3>${index + 1}. ${q.question}</h3>
+        <h3>${index + 1}. ${q.testName}</h3>
 
         <div class="list ${q.user === 0 ? 'my-answer' : ''} ${q.correct === 0 ? 'correct-answer' : ''}">
           1. ${q.options[0]}
