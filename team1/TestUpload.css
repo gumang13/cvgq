@@ -146,6 +146,9 @@
     border-radius: 9px;
      border: 1px solid #ccc;
 }
+.answerBox input label{
+   font-size: 18px;
+}
 .explanationBox{
   height: 100px;
   display: grid;
@@ -172,6 +175,8 @@
     height: 50px;
     background-color: #4374D9;
     color: white;
+    border: none;
+    font-size: 16px;
     
     
 }

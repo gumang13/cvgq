@@ -89,7 +89,7 @@ td {
     height: 80px;
     width: 800px;
     text-align: center;
-    font-size: 35px;
+    font-size:  2em;;
     font-weight: 700;
 }
 .tableWrap {
@@ -110,7 +110,7 @@ td {
   background-color: rgb(168, 167, 167);
 }
 .startButton:hover {
-  background-color: rgb(129, 129, 129);
+  background-color: #2f5ec4;
   color: white;
 }
 .startButton {
@@ -124,5 +124,6 @@ td {
   justify-content: center;
   margin: 0 auto;
   text-decoration: none;
-  color: black;
+  color: white;
+  background: #4374D9;
 }
