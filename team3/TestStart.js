@@ -150,5 +150,5 @@ function submitTest(){
     localStorage.setItem("wrongAnswers", JSON.stringify(wrongAnswers));
 
     // relative 경로를 사용하여 결과 페이지로 이동 (절대 경로 '/cvgq/...'는 GitHub Pages 환경에서 문제를 일으킬 수 있음)
-    window.location.href = "../team4/result.html"; // 팀원4에게 넘기기
+    window.location.href = "./team4/result.html"; // 팀원4에게 넘기기
 }
