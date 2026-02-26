@@ -149,5 +149,5 @@ function submitTest(){
     localStorage.setItem("total", questions.length);
     localStorage.setItem("wrongAnswers", JSON.stringify(wrongAnswers));
 
-    window.location.href = "/team4/result.html"; // 팀원4에게 넘기기
+    window.location.href = "./team4/result.html"; // 팀원4에게 넘기기
 }
